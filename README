@@ -1,0 +1,40 @@
+Author: Shang Shi
+Student ID: 101173744
+
+
+Purpose: Applying multi-inheritance and templated to Stimulate Aircraft part upadte module in Airline 
+
+Source file and head file: 
+Airline.h, Airline.cc, Array.h  Aircraft.h Aircraft.cc Date.h Date.cc
+Part.h Part.cc Control.h Control.cc View.h View.cc defs.h main.cc Makefile
+
+Class Type and purpose
+
+Entity Objects(store basic information): Part, FH_Part(inherit Part), IT_Part(inherit Part),
+                                    
+                                         FHIT_Part(inherit FH_Part and inherit IT_Part), Aircraft, Date 
+
+Collection Object: Array(A Collection class that is templated to store any objecet) 
+
+		   Aircraft(has a collection of part)
+
+Control Object: 
+
+	Airline:
+	provide functionality for install part on aircraft, add Aircraft,search aircraft, search part, 
+        
+	print Aicraft or Part, update part or part's information (such as: takeFlight: update flight hour) on aircraft, 
+	
+	and check parts which are required inspection
+
+	Control: Do the testing of airline's functionality 
+
+Boundary Object: View(Show the options of testing and allow user to test the functionality)
+
+
+Launching Instruction:
+  1. First Compile the source and header file:
+      make  
+   2. run it
+      Run it with: ./a4
+    
